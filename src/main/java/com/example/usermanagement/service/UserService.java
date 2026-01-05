@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public class UserService {
 
-    private UserRepository userRepository;
+    private UserRepository userRepository = new UserRepository();
 
     public void createUser(Long id, String name, String email) {
         var user = new User(id, name, email);
